@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Python environment
+env/
+venv/
+.venv/
+ENV/
+*.env
+*.venv
+env.bak/
+
+# Streamlit specific files
+.streamlit/
+
+# Log files
+*.log
+
+# Virtual machine files
+*.vagrant
+.vagrant/
+*.vbox
+*.vbox-prev
+*.vmwarevm/
+
+# Data files (add specific data file extensions you want to ignore)
+*.csv
+*.xlsx
+
+# Mac OS files
+.DS_Store
+
+# Images (if you have any large images)
+*.jpg
+*.jpeg
+*.png
+
+# Ignore saved models
+*.pkl
+*.h5
+model_saved/
