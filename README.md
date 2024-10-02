@@ -1,4 +1,4 @@
-# Movie Recommendation System - Hulu
+# MOVIE RECOMMENDATION SYSTEM - HULU
 ![3bc2f36497f3f66074ba25515128e0d8](https://github.com/user-attachments/assets/a07857a2-3bff-4ace-b509-b20254ed3717)
 
 ## Introduction
