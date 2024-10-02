@@ -18,3 +18,11 @@ While the full dataset consists of approximately 1.9 million ratings, this proje
 - Timestamp: The time when the rating was provided.
 - Movie Metadata: Information about the movies, such as title and genres.
 This data is crucial for building a collaborative filtering model that can predict which movies a user is likely to rate highly based on the behavior of similar users.
+
+## EDA
+
+## MODELLING
+- (Chosen Model, Evaluation, Deployment)
+  
+## FINDINGS/CONCLUSION
+
