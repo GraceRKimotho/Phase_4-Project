@@ -20,6 +20,16 @@ While the full dataset consists of approximately 1.9 million ratings, this proje
 This data is crucial for building a collaborative filtering model that can predict which movies a user is likely to rate highly based on the behavior of similar users.
 
 ## EDA
+This project implements a hybrid movie recommendation system that combines collaborative filtering and content-based filtering techniques to provide personalized movie suggestions. The system utilizes user ratings and movie attributes to generate relevant recommendations, enhancing user experience in discovering new films.
+
+### Features
+1.Collaborative Filtering: Leverages user interactions and ratings to identify patterns and suggest movies that similar users enjoyed.
+
+2.Content-Based Filtering: Analyzes movie attributes such as genres and titles to recommend similar films based on user-selected input.
+
+3.Hybrid Approach: Merges both methodologies to improve recommendation accuracy and cater to diverse user preferences.
+
+4.Temporal Recommendations: Considers the release year of movies for suggestions, enhancing relevance based on temporal proximity.
 
 ## MODELLING
 - (Chosen Model, Evaluation, Deployment)
