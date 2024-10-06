@@ -24,5 +24,55 @@ This data is crucial for building a collaborative filtering model that can predi
 ## MODELLING
 - (Chosen Model, Evaluation, Deployment)
   
-## FINDINGS/CONCLUSION
+## RECOMMENDATIONS
+### Implement a Hybrid Recommendation System:
+
+The hybrid model, which combines collaborative filtering (user-item interactions) and content-based filtering (movie features), shows promise in delivering more personalized and relevant recommendations. It can address the shortcomings of both methods, such as the cold start problem in collaborative filtering and the limited scope of content-based filtering.
+
+### Incorporate User Feedback Loop:
+
+Integrate a mechanism to collect explicit feedback (e.g., ratings) and implicit feedback (e.g., clicks, watch history) from users. This real-time data can continually refine the model, improving its accuracy and relevance.
+
+### Periodically Retrain the Model:
+
+User preferences and movie availability change over time. Regularly retraining the model on updated datasets will keep the recommendations current and align with shifting user interests.
+
+### Include Diversity and Novelty:
+
+While recommending popular titles is beneficial, incorporating lesser-known movies and genres can increase user engagement and broaden their viewing experience. Adjust model parameters to occasionally suggest niche content tailored to individual preferences.
+
+### Enhance Genre-Specific Recommendations:
+
+The analysis shows strong user interest in specific genres. Refine genre-based recommendation capabilities to allow users to explore top-rated and relevant titles within their favorite genres.
+
+### Expand Evaluation Metrics:
+
+In addition to RMSE and MAE, consider using precision, recall, and F1-score to evaluate the system's recommendation quality. User satisfaction surveys can also provide qualitative feedback for further improvements.
+
+## CONCLUSIONS
+
+### Effectiveness of the Hybrid Approach:
+
+The hybrid recommendation system, combining both collaborative and content-based filtering, has demonstrated its capability to provide diverse and personalized movie suggestions. It effectively utilizes user ratings and movie features to align with individual preferences, offering robust recommendations even when limited user data is available.
+
+### High User Engagement:
+
+The analysis of popular movies and genres suggests that user interaction is significantly driven by specific genres (e.g., drama, thriller). The system capitalizes on this by using content-based filtering to surface genre-specific recommendations, further enhancing user satisfaction.
+
+### Model Performance:
+
+With an RMSE of 0.6434 and an MAE of 0.4992, the collaborative filtering model provides a reasonably accurate prediction of user preferences. Incorporating this into a hybrid system optimizes the balance between accuracy and diversity in recommendations.
+
+### Future Enhancements:
+
+While the current model performs well, future work should focus on dynamic updates through continuous retraining, integrating user feedback, and exploring additional filtering techniques (e.g., knowledge-based or context-aware recommendations) to cater to a broader range of user preferences and interactions.
+
+Overall, the recommendation system lays a solid foundation for personalized movie suggestions, with room for ongoing refinement and enhancements to further engage users and improve their experience.
+
+
+
+
+
+
+
 
