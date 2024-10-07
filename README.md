@@ -11,29 +11,88 @@ The dataset used in this project was sourced from [Grouplens](https://grouplens.
 
 While the full dataset consists of approximately 1.9 million ratings, this project focuses on a subset of 100,000 ratings due to time constraints.
 
-### Key Features of the Dataset:
-- User ID: A unique identifier for each user.
-- Movie ID: A unique identifier for each movie.
-- Ratings: A score from 0.5 to 5.0 given by a user for a movie.
-- Timestamp: The time when the rating was provided.
-- Movie Metadata: Information about the movies, such as title and genres.
-This data is crucial for building a collaborative filtering model that can predict which movies a user is likely to rate highly based on the behavior of similar users.
+## Overview
+This project involves an exploratory data analysis (EDA) of a movie ratings dataset. The primary goal is to uncover insights into user preferences, genre popularity, and trends in movie ratings. The dataset includes over 765,000 movie entries, user ratings, and additional attributes such as movie genres and release years.
 
-## EDA
-This project implements a hybrid movie recommendation system that combines collaborative filtering and content-based filtering techniques to provide personalized movie suggestions. The system utilizes user ratings and movie attributes to generate relevant recommendations, enhancing user experience in discovering new films.
+## Contents
+- Data Description
+- Exploratory Data Analysis
+ - Univariate Analysis
+ -Bivariate Analysis
+- Results and Insights
+- Conclusion
+- Requirements
+- Usage
+- License
 
-### Features
-1.Collaborative Filtering: Leverages user interactions and ratings to identify patterns and suggest movies that similar users enjoyed.
+## Data Description
+The dataset consists of the following key columns:
 
-2.Content-Based Filtering: Analyzes movie attributes such as genres and titles to recommend similar films based on user-selected input.
+1.movieId: Unique identifier for each movie.
 
-3.Hybrid Approach: Merges both methodologies to improve recommendation accuracy and cater to diverse user preferences.
+2.userId: Identifier for users who rated the movies.
 
-4.Temporal Recommendations: Considers the release year of movies for suggestions, enhancing relevance based on temporal proximity.
+3.rating: User rating for each movie (ranging from 0.5 to 5.0).
 
-## MODELLING
-- (Chosen Model, Evaluation, Deployment)
-  
+4.timestamp: The time when the rating was given.
+
+5.release_year: The year the movie was released.
+
+6.genres: Genre(s) associated with the movie.
+
+7.tag: Tags assigned to the movie by users.
+
+## Key Statistics
+Total Entries: 765,271
+
+Average Movie Rating: 3.99
+
+Movies Released: 1921 - 2018
+
+Most Frequent Genres: Drama, Thriller, Crime, Comedy, Action
+
+## Exploratory Data Analysis
+## Univariate Analysis
+Summary Statistics: Basic statistics for key columns were computed, indicating a positive skew in movie ratings, with most ratings concentrated in the higher range (3-5).
+
+### Distribution of Ratings: A histogram was generated to visualize the distribution of movie ratings.
+![image](https://github.com/user-attachments/assets/2696a4a6-55c9-4313-b348-16de2e15461a)
+
+The histogram shows that the majority of ratings are clustered between 3 and 5, with a peak around a rating of 4.
+
+### Genre Distribution: A bar chart displays the most common movie genres.
+![image](https://github.com/user-attachments/assets/7b1a590c-da31-4f40-ad94-93458819cf91)
+
+This visualization reveals that Drama is the most prevalent genre, followed closely by Thriller and Crime.
+
+### Top 20 Most Rated Movies: The most frequently rated films were identified and visualized.
+![image](https://github.com/user-attachments/assets/81d8598a-881d-4ded-a8a9-dd45acec51d8)
+
+Titles such as "Pulp Fiction" and "Fight Club" lead the list, indicating high user engagement.
+
+### Top Tags: A bar chart shows the top 10 tags used in the dataset.
+![image](https://github.com/user-attachments/assets/dfab050d-3cec-44e9-bc85-a1458e846e21)
+
+"Thought-provoking" is the most frequently used tag, suggesting a preference for complex themes.
+
+## Bivariate Analysis
+- Ratings Per Movie: Movies were filtered to identify those with at least 100 ratings, allowing for analysis of popular films.
+
+- Combined Metric for Popularity: A metric combining average ratings and the number of ratings was created to rank movies.
+
+- Top Movies by Combined Metric: The top 10 movies based on the combined metric were visualized.
+![image](https://github.com/user-attachments/assets/e34ae6ba-e2d4-4a48-ad5e-701dcc2c4e4a)
+
+This chart highlights the most watched and highest-rated films, such as "The Shawshank Redemption."
+
+## Most Popular Movies by Genre
+A function allows users to input a genre and receive a list of the top-rated movies in that category.
+
+## Results and Insights
+The analysis indicates a preference for highly rated, critically acclaimed films, particularly in the Drama genre.
+User engagement appears to favor blockbuster titles with higher ratings, such as "The Shawshank Redemption" and "The Godfather."
+The genre distribution reveals that while there is a wide variety of movies, certain genres dominate user ratings.
+
 ## RECOMMENDATIONS
 ### Implement a Hybrid Recommendation System:
 
