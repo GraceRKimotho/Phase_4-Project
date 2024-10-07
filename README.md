@@ -21,9 +21,7 @@ This project involves an exploratory data analysis (EDA) of a movie ratings data
  -Bivariate Analysis
 - Results and Insights
 - Conclusion
-- Requirements
-- Usage
-- License
+- Recommendations
 
 ## Data Description
 The dataset consists of the following key columns:
