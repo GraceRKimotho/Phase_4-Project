@@ -1,6 +1,11 @@
 # MOVIE RECOMMENDATION SYSTEM - HULU
 ![3bc2f36497f3f66074ba25515128e0d8](https://github.com/user-attachments/assets/a07857a2-3bff-4ace-b509-b20254ed3717)
 
+Authors: Deborah Okeyo
+         Brian Githinji
+         Bedan Chege
+         Grace Kimotho
+
 ## Introduction
 In today’s highly competitive streaming landscape, personalized movie recommendations play a crucial role in user engagement and retention. Hulu, which holds 11% of the market share in the streaming industry, is looking to upgrade its current movie recommendation algorithm. The aim of this project is to develop a machine learning model that provides users with the top 5 movie recommendations based on their previous ratings of other movies.
 
